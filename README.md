@@ -1,7 +1,6 @@
 README
 ===========================
-同步学习Golang与Python
-
+同步学习Golang(1.9+)与Python(3.6+)
 
 ****
 |Author|duliang123|
