@@ -31,7 +31,7 @@ README
     * 6.2 Redis
     * 6.3 MongoDB
         * Go
-        * [Python](book/6.32.py)
+        * [Python](book/6.3.2.py)
 * 第7章：网络应用
 * 第8章：电子邮件
 * 第9章：WEB开发
