@@ -30,8 +30,8 @@ README
     * 6.1 MySQL
     * 6.2 Redis
     * 6.3 MongoDB
-        * 6.31 Go
-        * [6.32 Python](book/6.32.py)
+        * Go
+        * [Python](book/6.32.py)
 * 第7章：网络应用
 * 第8章：电子邮件
 * 第9章：WEB开发
