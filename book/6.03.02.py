@@ -20,7 +20,8 @@ client = MongoClient("mongodb://user_db_abc:duliang@127.0.0.1:27017/abc")
 db = client.get_database()
 print(db.name)
 
-'''列出所有数据库名称 因为user_db_abc用户权限不够 先注释掉
+'''
+# 列出所有数据库名称 因为user_db_abc用户权限不够 先注释掉
 dbs = client.database_names()
 print(dbs)
 '''
