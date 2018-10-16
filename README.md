@@ -38,3 +38,8 @@ Python3+
    * Concrete exceptions
    * Warnings
    * Exception hierarchy
+* 文本处理服务
+   * string - 常用字符串操作
+   * re - 正则表达式运算
+   * difflib - Helpers for computing deltas
+   * textwrap - Text wrapping and filling
