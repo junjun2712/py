@@ -21,6 +21,20 @@ Python3+
 * 内建常量
 * 内置类型
     * Truth Value Testing
-    * 布尔操作 — and, or, not
+    * 布尔操作 - and, or, not
     * 比较
-    * 数值类型 — int, float, complex
+    * 数值类型 - int, float, complex
+    * 迭代器类型
+    * 序列类型 - list, tuple, range
+    * 文本序列类型 - str
+    * 二进制序列类型 - bytes, bytearray, memoryview
+    * 集合类型 - set, frozenset
+    * 映射类型 - dict
+    * 上下文管理器类型
+    * 其他内置类型
+    * 特殊属性
+* 内置异常
+   * Base classes
+   * Concrete exceptions
+   * Warnings
+   * Exception hierarchy
