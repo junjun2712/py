@@ -32,6 +32,13 @@ for name in names:
     print(name)
 ```
 
+#### 打印数字0到10
+
+```python
+for num in range(11): # range(11) = range(0,11)
+    print(num)
+```
+
 
 ### while 循环
 
