@@ -1,5 +1,8 @@
 # 开发规范
 
+PEP 8 -- Style Guide for Python Code 
+
+https://legacy.python.org/dev/peps/pep-0008/
 
 ## 文件名
 
