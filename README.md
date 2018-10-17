@@ -9,9 +9,9 @@ Python3+
 
 
 ## 第一部分：基础
-* [开发规范](book/1.1.md)
-* [程序结构](book/1.2.md)
-* 语句流程
+* [开发规范](book/specification.md)
+* [程序结构](book/structure.md)
+* [语句流程](/book/statement.md)
 * 函数
 * 面向对象
 
