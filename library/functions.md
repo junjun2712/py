@@ -7,7 +7,7 @@
 | any()         | 判断给定的可迭代参数 iterable 是否全部为 False（元素除了是 0、空、False 外都算 True）如果有一个为 True，则返回 True。 | http://www.runoob.com/python/python-func-any.html |
 | ascii()       |
 | bin()         |
-| bool()        |
+| bool()        | 将给定参数转换为布尔类型，如果没有参数，返回 False。| http://www.runoob.com/python/python-func-bool.html |
 | breakpoint()  |
 | bytearray()   |
 | bytes()       |
