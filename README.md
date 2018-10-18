@@ -17,7 +17,7 @@ Python3+
 
 
 ## 第二部分：标准库
-* 内建函数
+* [内建函数](library/functions.md)
 * 内建常量
 * 内置类型
     * Truth Value Testing
