@@ -30,3 +30,17 @@
 | getattr() |
 | globals() |
 | hasattr() |
+| hash() |
+| help() |
+| hex() |
+| id() |
+| input() |
+| int() |
+| isinstance() |
+| issubclass() |
+| iter() |
+| len() |
+| list() |
+| locals() |
+| map() |
+| max() |
