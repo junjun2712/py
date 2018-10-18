@@ -58,3 +58,16 @@
 | repr() |
 | reversed() |
 | round() |
+| set() |
+| setattr() |
+| slice() |
+| sorted() |
+| staticmethod() |
+| str() |
+| sum() |
+| super() |
+| tuple() |
+| type() |
+| vars() |
+| zip() |
+| __import__() |
