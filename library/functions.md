@@ -1,5 +1,7 @@
 # 内建函数
 
+https://docs.python.org/3/library/functions.html
+
 | Built-in Functions |             ||
 |:--------------|:-----------------|:------------------------------------------------------|
 | abs()         | 返回数字的绝对值 | http://www.runoob.com/python/func-number-abs.html | 
