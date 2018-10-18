@@ -43,6 +43,8 @@ Python3.6+
    * re - 正则表达式运算
    * difflib - Helpers for computing deltas
    * textwrap - Text wrapping and filling
+* 数据类型
+    * [datetime - 基本日期和时间类型](library/datetime.md)
 
 
 ## 第三部分：第三方库
