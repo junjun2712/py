@@ -1,4 +1,4 @@
-# Built-in Functions
+# 内建函数
 
 | Built-in Functions |             |
 |:--------------|:-----------------|
