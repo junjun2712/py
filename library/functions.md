@@ -44,3 +44,17 @@
 | locals() |
 | map() |
 | max() |
+| memoryview() |
+| min() |
+| next() |
+| object() |
+| oct() |
+| open() |
+| ord() |
+| pow() |
+| print() |
+| property() |
+| range() |
+| repr() |
+| reversed() |
+| round() |
