@@ -43,5 +43,7 @@ Python3.6+
    * re - 正则表达式运算
    * difflib - Helpers for computing deltas
    * textwrap - Text wrapping and filling
-* 第三部分：第三方库
-    * Requests: HTTP for Humans
+
+
+## 第三部分：第三方库
+* Requests: HTTP for Humans
