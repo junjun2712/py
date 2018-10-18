@@ -70,4 +70,4 @@
 | type() |
 | vars() |
 | zip() |
-| __import__() |
+| ```__import__()``` |
