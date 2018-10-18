@@ -1,6 +1,7 @@
 # 内建函数
 
-https://docs.python.org/3/library/functions.html
+* https://docs.python.org/3/library/functions.html
+* http://www.runoob.com/python/python-built-in-functions.html (py2)
 
 | Built-in Functions |             ||
 |:--------------|:-----------------|:------------------------------------------------------|
