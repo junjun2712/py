@@ -17,8 +17,8 @@
 | compile()     |
 | complex()     |
 | delattr() |
-| dict() |
-| dir() |
+| dict() | 用于创建一个字典 |
+| dir() | 不带参数时返回当前范围内的变量、方法和定义的类型列表；带参数时返回参数的属性、方法列表。如果参数包含方法__dir__()，该方法将被调用。 |http://www.runoob.com/python/python-func-dir.html
 | divmod() |
 | enumerate() |
 | eval() |
