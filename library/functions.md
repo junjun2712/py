@@ -21,7 +21,7 @@
 | dir() | 不带参数时返回当前范围内的变量、方法和定义的类型列表；带参数时返回参数的属性、方法列表。如果参数包含方法__dir__()，该方法将被调用。 |http://www.runoob.com/python/python-func-dir.html
 | divmod() |
 | enumerate() |
-| eval() |
+| eval() | 用来执行一个字符串表达式，并返回表达式的值。如：eval( '3 * 7') 结果：21 |
 | exec() |
 | filter() |
 | float() |
