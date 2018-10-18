@@ -1,7 +1,7 @@
 README
 ===========================
 
-Python3+
+Python3.6+
 
 |Author|duliang123|
 |---|---
@@ -43,3 +43,5 @@ Python3+
    * re - 正则表达式运算
    * difflib - Helpers for computing deltas
    * textwrap - Text wrapping and filling
+* 第三部分：第三方库
+    * Requests: HTTP for Humans
