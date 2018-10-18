@@ -10,7 +10,7 @@
 | bool()        | 将给定参数转换为布尔类型，如果没有参数，返回 False。| http://www.runoob.com/python/python-func-bool.html |
 | breakpoint()  |
 | bytearray()   |
-| bytes()       |
+| bytes()       | bytes(str, encoding='utf-8')，可以将字符串str类型转换成bytes类型||
 | callable()    |
 | chr()         |
 | classmethod() |
