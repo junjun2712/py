@@ -3,8 +3,8 @@
 | Built-in Functions |             ||
 |:--------------|:-----------------|:------------------------------------------------------|
 | abs()         | 返回数字的绝对值 | http://www.runoob.com/python/func-number-abs.html | 
-| all()         | 判断给定的可迭代参数 iterable 中的所有元素是否都为 True （元素除了是 0、空、False 外都算 True。）| http://www.runoob.com/python/python-func-all.html|
-| any()         | 判断给定的可迭代参数 iterable 是否全部为 False（元素除了是 0、空、False 外都算 True。） | http://www.runoob.com/python/python-func-any.html |
+| all()         | 判断给定的可迭代参数 iterable 中的所有元素是否都为 True （元素除了是 0、空、False 外都算 True）如果是返回 True，否则返回 False。 | http://www.runoob.com/python/python-func-all.html|
+| any()         | 判断给定的可迭代参数 iterable 是否全部为 False（元素除了是 0、空、False 外都算 True）如果有一个为 True，则返回 True。 | http://www.runoob.com/python/python-func-any.html |
 | ascii()       |
 | bin()         |
 | bool()        |
