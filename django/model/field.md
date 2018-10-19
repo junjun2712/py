@@ -7,3 +7,5 @@
 
 ### null
 如果为```True```, Django将在数据库中将空值存储为```NULL```。默认为```False```。
+
+### blank
