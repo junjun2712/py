@@ -87,6 +87,13 @@ https://docs.djangoproject.com/zh-hans/2.1/topics/db/models/#verbose-field-names
 ### CharField
 
 ### DateTimeField
+参数：
+* auto_now_add 当对象首次创建时，自动将字段设置为当前时间
+* auto_now 每次保存对象时自动将字段设置为当前时间
+```python
+time_create = models.DateTimeField('主动创建时间', auto_now_add=True, help_text='主动创建时间')
+time_modified = models.DateTimeField('被动更新时间', auto_now=True, help_text='被动更新时间')
+```
 
 ### DecimalField
 
