@@ -85,6 +85,9 @@ https://docs.djangoproject.com/zh-hans/2.1/topics/db/models/#verbose-field-names
 ## 字段类型
 
 ### CharField
+```python
+name = models.CharField('节点名称', max_length=32, help_text='节点的名称')
+```
 
 ### DateTimeField
 参数：
@@ -98,6 +101,9 @@ time_modified = models.DateTimeField('被动更新时间', auto_now=True, help_t
 ### DecimalField
 
 ### IntegerField
+```python
+is_deleted = models.IntegerField('逻辑状态', default=0, help_text='1表示删除 0表示未删除')
+```
 
 ### ForeignKey
 
