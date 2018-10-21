@@ -76,7 +76,7 @@ help_text="账号长度必须大于6位，且包括大小写字母数字"
 如果为 True ，这个字段值在整个表中必须是唯一的。
 
 ### verbose_name
-字段的备注名（表单input项前的文本标签如“名称：”）。
+字段的备注名（表单input项前的文本标签如：“名称：”）。
 * 除了 ForeignKey ， ManyToManyField 和 OneToOneField ，任何字段类型（第一个参数）都接收一个可选的参数 verbose_name（不用加verbose_name＝） ，如果未指定该参数值， Django 会自动使用该字段的属性名作为该参数值，并且把下划线转换为空格。
 * ForeignKey, ManyToManyField and OneToOneField 接收的第一个参数为模型的类名，后面可以添加一个 verbose_name 参数
 https://docs.djangoproject.com/zh-hans/2.1/topics/db/models/#verbose-field-names
