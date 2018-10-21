@@ -72,6 +72,9 @@ help_text="账号长度必须大于6位，且包括大小写字母数字"
 
 在一个模型中，如果你没有对任何一个字段设置 primary_key=True 选项。 Django 会自动添加一个 IntegerField 字段，用于设置为主键，因此除非你想重写 Django 默认的主键设置行为，你可以不手动设置主键。
 
+### unique
+如果为 True ，这个字段值在整个表中必须是唯一的。
+
 ### verbose_name
 字段的备注名。
 * 除了 ForeignKey ， ManyToManyField 和 OneToOneField ，任何字段类型（第一个参数）都接收一个可选的参数 verbose_name（不用加verbose_name＝） ，如果未指定该参数值， Django 会自动使用该字段的属性名作为该参数值，并且把下划线转换为空格。
