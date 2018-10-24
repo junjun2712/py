@@ -111,4 +111,13 @@ is_deleted = models.IntegerField('逻辑状态', default=0, help_text='1表示�
 
 ### OneToOneField
 
+### UUIDField
+存储通用唯一标识符的字段。使用Python的UUID类。当在PostgreSQL上使用时，它存储在uuid数据类型中，否则存储在char(32)中。
+```python
+import uuid
+from django.db import models
 
+class MyUUIDModel(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    # other fields
+```
