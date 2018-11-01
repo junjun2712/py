@@ -104,3 +104,29 @@ User information: uid=0 euid=0 gid=0 egid=0
 [2018-11-01 10:54:23,755: INFO/MainProcess] celery@localhost.localdomain ready.
 ```
 
+
+### Calling the task 另个终端窗口
+
+cd /home/wwwroot/celery/app1/
+
+```python
+>>> from tasks import add
+>>> result = add.delay(4, 4)
+>>> result.ready()
+True
+>>> result.get(timeout=1)
+8
+>>> result.get(propagate=False)
+8
+>>> result.traceback
+>>> 
+
+```
+
+```bash
+(ver) [root@localhost app1]# tree
+.
+└── tasks.py
+
+0 directories, 1 file
+```
