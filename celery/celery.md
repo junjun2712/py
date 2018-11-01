@@ -109,6 +109,7 @@ User information: uid=0 euid=0 gid=0 egid=0
 
 ```bash
 cd ~
+source ver/bin/activate
 cd /home/wwwroot/celery/app1/
 ```
 
