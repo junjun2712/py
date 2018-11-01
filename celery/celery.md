@@ -67,3 +67,40 @@ def add(x, y):
 ```bash
 celery -A tasks worker --loglevel=info
 ```
+
+启动信息：
+```
+# celery -A tasks worker --loglevel=info
+/root/ver/lib/python3.6/site-packages/celery/platforms.py:796: RuntimeWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  uid=uid, euid=euid, gid=gid, egid=egid,
+ 
+ -------------- celery@localhost.localdomain v4.2.0 (windowlicker)
+---- **** ----- 
+--- * ***  * -- Linux-3.10.0-693.el7.x86_64-x86_64-with-centos-7.4.1708-Core 2018-11-01 10:54:22
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x7fd6847298d0
+- ** ---------- .> transport:   redis://localhost:6379/1
+- ** ---------- .> results:     redis://localhost:6379/1
+- *** --- * --- .> concurrency: 2 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . tasks.add
+
+[2018-11-01 10:54:22,650: INFO/MainProcess] Connected to redis://localhost:6379/1
+[2018-11-01 10:54:22,672: INFO/MainProcess] mingle: searching for neighbors
+[2018-11-01 10:54:23,733: INFO/MainProcess] mingle: all alone
+[2018-11-01 10:54:23,755: INFO/MainProcess] celery@localhost.localdomain ready.
+```
+
