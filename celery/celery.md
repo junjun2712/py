@@ -42,7 +42,7 @@ mkdir -p /home/wwwroot/celery
 ```
 
 
-### App1
+### App1 异步执行
 
 #### Application
 
@@ -69,7 +69,7 @@ def mul(x, y):
 ```
 
 
-### Running the Celery worker server
+#### Running the Celery worker server
 
 ```bash
 celery -A tasks worker --loglevel=info
@@ -113,7 +113,7 @@ User information: uid=0 euid=0 gid=0 egid=0
 ```
 
 
-### Calling the task 另个终端窗口
+#### Calling the task 另个终端窗口
 
 要调用我们的任务，可以使用delay()方法。
 
