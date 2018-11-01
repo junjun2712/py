@@ -153,7 +153,7 @@ True
 0 directories, 2 files
 ```
 
-程序执行：
+程序执行： vim client.py
 ```python
 import time
 
