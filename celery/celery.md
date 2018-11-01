@@ -116,7 +116,9 @@ cd /home/wwwroot/celery/app1/
 ```python
 >>> from tasks import add
 >>> result = add.delay(4, 4)
->>> result.ready()
+>>> result # result是个对象，要通过get()或者.result打印结果
+<AsyncResult: 85d9866d-1e27-4552-8427-99ef43d92e12>
+>>> result.ready() # 通过ready()、.status查看任务的执行状态
 True
 >>> result.get(timeout=1)
 8
