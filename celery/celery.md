@@ -52,6 +52,8 @@ mkdir app1 && cd app1
 
 vim tasks.py
 ```python
+import time
+
 from celery import Celery
 
 app = Celery('tasks', backend='redis://localhost:6379/1', broker='redis://localhost:6379/1')
@@ -59,6 +61,11 @@ app = Celery('tasks', backend='redis://localhost:6379/1', broker='redis://localh
 @app.task
 def add(x, y):
     return x + y
+
+@app.task
+def mul(x, y):
+    time.sleep(5)
+    return x * y
 ```
 
 
@@ -82,10 +89,10 @@ User information: uid=0 euid=0 gid=0 egid=0
  
  -------------- celery@localhost.localdomain v4.2.0 (windowlicker)
 ---- **** ----- 
---- * ***  * -- Linux-3.10.0-693.el7.x86_64-x86_64-with-centos-7.4.1708-Core 2018-11-01 10:54:22
+--- * ***  * -- Linux-3.10.0-693.el7.x86_64-x86_64-with-centos-7.4.1708-Core 2018-11-01 13:42:51
 -- * - **** --- 
 - ** ---------- [config]
-- ** ---------- .> app:         tasks:0x7fd6847298d0
+- ** ---------- .> app:         tasks:0x7fb82ad85518
 - ** ---------- .> transport:   redis://localhost:6379/1
 - ** ---------- .> results:     redis://localhost:6379/1
 - *** --- * --- .> concurrency: 2 (prefork)
@@ -97,11 +104,12 @@ User information: uid=0 euid=0 gid=0 egid=0
 
 [tasks]
   . tasks.add
+  . tasks.mul
 
-[2018-11-01 10:54:22,650: INFO/MainProcess] Connected to redis://localhost:6379/1
-[2018-11-01 10:54:22,672: INFO/MainProcess] mingle: searching for neighbors
-[2018-11-01 10:54:23,733: INFO/MainProcess] mingle: all alone
-[2018-11-01 10:54:23,755: INFO/MainProcess] celery@localhost.localdomain ready.
+[2018-11-01 13:42:51,428: INFO/MainProcess] Connected to redis://localhost:6379/1
+[2018-11-01 13:42:51,453: INFO/MainProcess] mingle: searching for neighbors
+[2018-11-01 13:42:52,504: INFO/MainProcess] mingle: all alone
+[2018-11-01 13:42:52,516: INFO/MainProcess] celery@localhost.localdomain ready.
 ```
 
 
@@ -131,14 +139,46 @@ True
 >>> result.get(propagate=False)
 8
 >>> result.traceback
->>> 
-
+>>>
 ```
 
 ```bash
+(ver) [root@localhost app1]# pwd
+/home/wwwroot/celery/app1
 (ver) [root@localhost app1]# tree
 .
+├── client.py
 └── tasks.py
 
-0 directories, 1 file
+0 directories, 2 files
+```
+
+程序执行：
+```python
+import time
+
+from tasks import add,mul
+
+add_ret = add.delay(4, 4)
+mul_ret = mul.delay(5, 5)
+
+while not add_ret.ready():
+    time.sleep(1)
+    print("waiting for task to be done")
+print('add task done: {0}'.format(add_ret.get()))
+
+while not mul_ret.ready():
+    time.sleep(2)
+    print("waiting for task to be done")
+print('mul task done: {0}'.format(mul_ret.get()))
+```
+
+```bash
+# python client.py 
+waiting for task to be done
+add task done: 8
+waiting for task to be done
+waiting for task to be done
+waiting for task to be done
+mul task done: 25
 ```
