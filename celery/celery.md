@@ -117,7 +117,7 @@ User information: uid=0 euid=0 gid=0 egid=0
 
 要调用我们的任务，可以使用delay()方法。
 
-这是apply_async()方法的一个快捷方式，，它提供了对任务执行的更大控制(参见[调用任务](http://docs.celeryproject.org/en/latest/userguide/calling.html#guide-calling))。
+这是apply_async()方法的一个快捷方式，可以更好地控制任务执行(参见[调用任务](http://docs.celeryproject.org/en/latest/userguide/calling.html#guide-calling))。
 
 ```bash
 cd ~
